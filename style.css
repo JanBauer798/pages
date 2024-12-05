@@ -7,6 +7,15 @@ main {
     margin: 40px 0 0 0;
 }
 
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    color: firebrick;
+}
+
 article{
     text-align:justify;
 }
@@ -17,14 +26,43 @@ article{
 
 .nav{
     display: flex;
-    justify-content: space-evenly;
 }
 
 .portrait-container{
     display: flex;
-    justify-content: space-between;
 }
 
-.portrait-container > img{
-    max-height: 30vw;
+
+@media(max-width: 650px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav > a{
+        margin-bottom: 15px;
+    }
+    .portrait-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .portrait-container > img{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 650px) {
+    .nav{
+        justify-content: space-evenly;
+    }
+    .portrait-container{
+        justify-content: space-between;
+    }
+
+    .portrait-container > img{
+        max-height: 30vw;
+    }
 }
