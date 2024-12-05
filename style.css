@@ -1,0 +1,26 @@
+main {
+    padding: 0 10%;
+    margin: 40px 0 0 0;
+}
+
+article{
+    text-align:justify;
+}
+
+.title{
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portrait-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.portrait-container > img{
+    max-height: 30vw;
+}
